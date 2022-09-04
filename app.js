@@ -9,7 +9,7 @@ const http = require('http');
 
 const targetUrl = process.env.TARGET_URL || 'https://jsonplaceholder.typicode.com'; // Run localtunnel like `lt -s rscraper -p 8080 --print-requests`; then visit https://yourname.loca.lt/todos/1 .
 
-const proxyServerPort = process.env.PROXY_SERVER_PORT || 80;
+const proxyServerPort = process.env.PORT || 8080;
 
 // eslint-disable-next-line max-lines-per-function
 app.use('/', function (clientRequest, clientResponse) {
